@@ -57,7 +57,7 @@
             <div class="stat reveal"><dt>Turkish grammar rules mapped</dt><dd>350</dd></div>
             <div class="stat reveal" style="--d:1"><dt>dictionary words, fully offline</dt><dd>22,000</dd></div>
             <div class="stat reveal" style="--d:2"><dt>languages for subtitles</dt><dd>20+</dd></div>
-            <div class="stat reveal" style="--d:3"><dt>KaiOS games on the way</dt><dd>3</dd></div>
+            <div class="stat reveal" style="--d:3"><dt>KaiOS games on the way</dt><dd>4</dd></div>
           </dl>
         </div>
       </section>
@@ -194,6 +194,11 @@
             <span class="game-name">Sky Stack</span>
             <span class="game-text">Drop swinging floors and build the tallest tower.</span>
           </button>
+          <button class="game reveal" type="button" data-sheet="petpens" role="listitem" style="--d:3">
+            <span class="phone"><img src="assets/pet-pens.webp" width="480" height="640" loading="lazy" alt="Pet Pens: a 7 by 7 board split into coloured pens, with two cats placed and ruled-out squares crossed."></span>
+            <span class="game-name">Pet Pens</span>
+            <span class="game-text">Give every pet its own row, column and pen.</span>
+          </button>
         </div>
       </section>
 
@@ -225,7 +230,7 @@
               <li><span class="tl-year">2021</span><span class="tl-what"><a href="https://github.com/ghost545a/ICT_Project">ICT Project</a>, my first website, in HTML and CSS.</span></li>
               <li><span class="tl-year">2022</span><span class="tl-what"><a href="https://github.com/ghost545a/pycalculater">A Python calculator</a> and <a href="https://github.com/ghost545a/Cppfirst">my first C++</a>.</span></li>
               <li><span class="tl-year">2025</span><span class="tl-what">A Flask app that translates movie subtitles into Arabic.</span></li>
-              <li><span class="tl-year">2026</span><span class="tl-what">Rust: a Turkish learning player, a grammar map in WebAssembly, a Pomodoro timer. Plus three KaiOS games.</span></li>
+              <li><span class="tl-year">2026</span><span class="tl-what">Rust: a Turkish learning player, a grammar map in WebAssembly, a Pomodoro timer. Plus four KaiOS games.</span></li>
             </ol>
           </div>
         </div>
@@ -399,6 +404,20 @@
     </ul>
     <h3>Built with</h3>
     <ul class="chips"><li>JavaScript (ES5)</li><li>Canvas</li><li>Web Audio</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
+  </template>
+
+  <template id="t-petpens" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Pet Pens">
+    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/pet-pens.webp" width="480" height="640" alt="Pet Pens gameplay."></span></figure>
+    <p class="sheet-lede">A logic puzzle. The board is split into coloured pens, and every row, every column and every pen needs exactly one pet. Pets can’t touch, not even corner to corner.</p>
+    <h3>How it plays</h3>
+    <ul class="sheet-list">
+      <li><strong>300 levels</strong> that grow from 5×5 to 9×9, each with exactly one solution. After that, new puzzles are generated on the phone.</li>
+      <li>Place a pet in the right square and it crosses out every square it rules out.</li>
+      <li>A wrong pet costs a heart. Undo, cross-outs and hints help when you’re stuck.</li>
+      <li>Pick your favourite pet: cat, dog, rabbit, fox, panda and more.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>JavaScript (ES5)</li><li>HTML &amp; CSS</li><li>Puzzle generator</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
   </template>
 
   <script src="app.js" defer></script>
