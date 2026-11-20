@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mohammed Maharm</title>
+  <meta name="description" content="Mohammed Maharm, a student developer from Yemen. Tools for learning languages in Rust and WebAssembly, and small games for KaiOS phones.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Mohammed Maharm">
+  <meta property="og:description" content="Tools for learning languages, and games for tiny screens.">
+  <meta property="og:image" content="https://ghost545a.github.io/assets/turkce-map.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
+
+  <div class="page" id="page">
+    <!-- Translucent navigation: content scrolls underneath -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="nav-name" href="#top" aria-label="Mohammed Maharm, back to top">Mohammed Maharm</a>
+        <nav aria-label="Sections">
+          <ul class="nav-links">
+            <li><a href="#work" data-section="work">Projects</a></li>
+            <li><a href="#games" data-section="games">Games</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+          </ul>
+        </nav>
+        <a class="nav-cta" href="https://github.com/ghost545a" rel="me">GitHub</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="wrap">
+          <img class="avatar reveal" src="https://avatars.githubusercontent.com/u/78747137?v=4&amp;s=320" width="112" height="112" alt="Portrait of Mohammed Maharm">
+          <p class="hero-hello reveal" style="--d:1">Hi, I’m Mohammed.</p>
+          <h1 class="hero-title reveal" style="--d:2">I build tools for learning languages, and games for&nbsp;tiny&nbsp;screens.</h1>
+          <p class="hero-lede reveal" style="--d:3">I’m a student developer from Yemen. I write Rust, WebAssembly and plain JavaScript, and most of what I make either helps me learn Turkish or fits on a 240&nbsp;×&nbsp;320 phone display.</p>
+          <div class="hero-actions reveal" style="--d:4">
+            <a class="btn btn-fill" href="#work">See my projects</a>
+            <a class="btn btn-plain" href="https://github.com/ghost545a" rel="me">Follow on GitHub <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- By the numbers -->
+      <section class="stats" aria-label="By the numbers">
+        <div class="wrap">
+          <dl class="stats-grid">
+            <div class="stat reveal"><dt>Turkish grammar rules mapped</dt><dd>350</dd></div>
+            <div class="stat reveal" style="--d:1"><dt>dictionary words, fully offline</dt><dd>22,000</dd></div>
+            <div class="stat reveal" style="--d:2"><dt>languages for subtitles</dt><dd>20+</dd></div>
+            <div class="stat reveal" style="--d:3"><dt>KaiOS games on the way</dt><dd>3</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 id="work-title" class="section-title">Things I’ve built.</h2>
+            <p class="section-lede">Open any project for the details, or jump straight to the code.</p>
+          </header>
+
+          <div class="tiles">
+            <!-- Featured: Türkçe Dilbilgisi -->
+            <a class="tile tile-feature reveal" href="https://github.com/ghost545a/turkce-dilbilgisi" data-sheet="turkce">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Rust · WebAssembly</p>
+                <h3 class="tile-title">Türkçe Dilbilgisi</h3>
+                <p class="tile-text">Turkish grammar as a map you can explore. 350 rules, zoomable, searchable, and running in the browser.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <img src="assets/turkce-map.webp" width="1600" height="1000" loading="lazy" alt="The Türkçe Dilbilgisi radial map: grammar topics branch out from a red centre node into hundreds of rules.">
+                </div>
+              </div>
+            </a>
+
+            <!-- TRLearn Player -->
+            <a class="tile reveal" href="https://github.com/ghost545a/trlearn-player" data-sheet="trlearn">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Native Rust desktop app</p>
+                <h3 class="tile-title">TRLearn Player</h3>
+                <p class="tile-text">Watch in Turkish with English underneath. Tap any word to see what it means.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual" aria-hidden="true">
+                <div class="mock-player">
+                  <div class="mp-video">
+                    <div class="mp-card">
+                      <span class="mp-word">gidiyorum</span>
+                      <span class="mp-root">gitmek · <em>to go</em></span>
+                    </div>
+                  </div>
+                  <div class="mp-subs">
+                    <p class="mp-tr" lang="tr">Bu akşam sinemaya <mark>gidiyorum</mark>.</p>
+                    <p class="mp-en">I’m going to the cinema tonight.</p>
+                  </div>
+                  <div class="mp-bar"><span></span></div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Ephemeral -->
+            <a class="tile reveal" href="https://github.com/ghost545a/ephemeral-todolist" data-sheet="ephemeral" style="--d:1">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">JavaScript · No dependencies</p>
+                <h3 class="tile-title">Ephemeral</h3>
+                <p class="tile-text">A to-do list that forgets on purpose. Nothing is stored until you choose to save it.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <picture>
+                    <source srcset="assets/ephemeral-light.webp" media="(prefers-color-scheme: light)">
+                    <img src="assets/ephemeral-dark.webp" width="1200" height="1200" loading="lazy" alt="Ephemeral showing four tasks in a glassy card, with import and export buttons.">
+                  </picture>
+                </div>
+              </div>
+            </a>
+
+            <!-- Subtitle translator -->
+            <a class="tile reveal" href="https://github.com/ghost545a/Subtitle_Arabic_maker" data-sheet="subtitles">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Python · Flask</p>
+                <h3 class="tile-title">Movie Subtitle Translator</h3>
+                <p class="tile-text">Turn an <code>.srt</code> file into Arabic, or 20 other languages, and watch the progress live.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <img src="assets/subtitle-translator.webp" width="1600" height="611" loading="lazy" alt="The translator page, titled تعريب الأفلام, with a file picker, English and Arabic language menus, and a progress bar at 64%.">
+                </div>
+              </div>
+            </a>
+
+            <!-- Pomodoro -->
+            <a class="tile reveal" href="https://github.com/ghost545a/LightweightPomodoroTimer" data-sheet="pomodoro" style="--d:1">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Rust · Slint</p>
+                <h3 class="tile-title">Lightweight Pomodoro</h3>
+                <p class="tile-text">A focus timer in a 2.7&nbsp;MB executable. I fixed its timer drift and added cycle tracking.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual" aria-hidden="true">
+                <div class="mock-timer">
+                  <p class="mt-label">Work · 1/4</p>
+                  <p class="mt-time">25:00</p>
+                  <div class="mt-buttons">
+                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.6 4.7l1.9.6A5 5 0 1 0 12 7v2.5L8 6l4-3.5z"/></svg></span>
+                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M6 5.5v13l9-6.5zM16 5.5h2.2v13H16z"/></svg></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Games -->
+      <section class="section section-games" id="games" aria-labelledby="games-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Games</p>
+            <h2 id="games-title" class="section-title">Made for KaiOS.</h2>
+            <p class="section-lede">Small games for feature phones with a D-pad, two soft keys and no touchscreen. Written in plain ES5 so the same code runs on KaiOS 2.5 and 3.x. Coming to the KaiStore.</p>
+          </header>
+        </div>
+        <div class="games-scroller" role="list">
+          <button class="game reveal" type="button" data-sheet="matchten" role="listitem">
+            <span class="phone"><img src="assets/match-numbers-10.webp" width="480" height="640" loading="lazy" alt="Match Numbers 10: a grid of digits with one cell selected."></span>
+            <span class="game-name">Match Numbers 10</span>
+            <span class="game-text">Pair equal numbers, or two that make ten.</span>
+          </button>
+          <button class="game reveal" type="button" data-sheet="petdoku" role="listitem" style="--d:1">
+            <span class="phone"><img src="assets/petdoku.webp" width="480" height="640" loading="lazy" alt="Petdoku: a sudoku grid filled with pet faces instead of numbers."></span>
+            <span class="game-name">Petdoku</span>
+            <span class="game-text">Cozy sudoku with pets instead of numbers.</span>
+          </button>
+          <button class="game reveal" type="button" data-sheet="skystack" role="listitem" style="--d:2">
+            <span class="phone"><img src="assets/sky-stack.webp" width="480" height="640" loading="lazy" alt="Sky Stack: a crane swings a floor above a three-storey tower."></span>
+            <span class="game-name">Sky Stack</span>
+            <span class="game-text">Drop swinging floors and build the tallest tower.</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="wrap about">
+          <header class="section-head reveal">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title" class="section-title">A bit about me.</h2>
+          </header>
+          <div class="about-body">
+            <div class="about-text reveal">
+              <p>I’m Mohammed Maharm, a student in Yemen. I started small: an HTML page for an ICT class, a calculator in Python, a first file of C++. These days I mostly write Rust.</p>
+              <p>Many of my projects come from learning Turkish. I wanted to see the whole grammar at once, so I drew it as a map. I wanted to tap a word in a subtitle and get its meaning, so I built a player that does that.</p>
+              <p>I also like the limits of tiny screens. My KaiOS games run on phones with no touchscreen, so every pixel and every key press has to earn its place.</p>
+            </div>
+            <aside class="about-side reveal" style="--d:1" aria-label="Tools I use">
+              <h3 class="side-title">What I work with</h3>
+              <ul class="chips">
+                <li>Rust</li><li>WebAssembly</li><li>JavaScript</li><li>HTML &amp; CSS</li>
+                <li>Python</li><li>Flask</li><li>egui</li><li>Slint</li><li>SQLite</li><li>KaiOS</li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="timeline reveal">
+            <h3 class="side-title">How I got here</h3>
+            <ol>
+              <li><span class="tl-year">2021</span><span class="tl-what"><a href="https://github.com/ghost545a/ICT_Project">ICT Project</a>, my first website, in HTML and CSS.</span></li>
+              <li><span class="tl-year">2022</span><span class="tl-what"><a href="https://github.com/ghost545a/pycalculater">A Python calculator</a> and <a href="https://github.com/ghost545a/Cppfirst">my first C++</a>.</span></li>
+              <li><span class="tl-year">2025</span><span class="tl-what">A Flask app that translates movie subtitles into Arabic.</span></li>
+              <li><span class="tl-year">2026</span><span class="tl-what">Rust: a Turkish learning player, a grammar map in WebAssembly, a Pomodoro timer. Plus three KaiOS games.</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div class="wrap reveal">
+          <h2 class="contact-title">Want to see more?</h2>
+          <p class="contact-text">Everything I make is on GitHub. Star something, open an issue, or say hello.</p>
+          <a class="btn btn-fill btn-large" href="https://github.com/ghost545a" rel="me">github.com/ghost545a</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p>© 2026 Mohammed Maharm</p>
+        <p>Built by hand with HTML, CSS and a little JavaScript.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Project sheet: slides up, follows your finger, flicks away -->
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-handle" id="sheet-handle">
+      <span class="grabber" aria-hidden="true"></span>
+      <div class="sheet-head">
+        <div>
+          <p class="sheet-eyebrow" id="sheet-eyebrow"></p>
+          <h2 class="sheet-title" id="sheet-title" tabindex="-1"></h2>
+        </div>
+        <button class="sheet-close" id="sheet-close" type="button" aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+
+  <!-- Sheet content. Kept in the page so it is searchable and works with plain HTML. -->
+  <template id="t-turkce" data-eyebrow="Rust · WebAssembly · Canvas" data-title="Türkçe Dilbilgisi">
+    <figure class="sheet-figure dark"><img src="assets/turkce-map.webp" width="1600" height="1000" alt="The radial grammar map."></figure>
+    <p class="sheet-lede">An interactive radial mind-map of Turkish grammar. It’s written in Rust, compiled to WebAssembly, and drawn on an HTML canvas.</p>
+    <h3>Highlights</h3>
+    <ul class="sheet-list">
+      <li>10 rings and 350 rules, each with a suffix formula, vowel-harmony notes, exceptions, a CEFR level and three example sentences.</li>
+      <li>Click to expand a branch, scroll to zoom at the cursor, drag to pan. Live search opens the path to any match.</li>
+      <li><strong>Study by level:</strong> the same rules as a house of six CEFR floors, A1 on the ground floor and C2 at the top.</li>
+      <li><strong>Player:</strong> watch a video with Turkish and English subtitles, tap a word to see its meaning, and save it for later.</li>
+      <li>A frequency dictionary of 200 verbs and 150 adjectives.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>Rust</li><li>WebAssembly</li><li>wasm-pack</li><li>Canvas</li><li>JavaScript</li></ul>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://ghost545a.github.io/turkce-dilbilgisi/">Open the live map</a>
+      <a class="btn btn-tinted" href="https://github.com/ghost545a/turkce-dilbilgisi">View source</a>
+    </div>
+  </template>
+
+  <template id="t-trlearn" data-eyebrow="Rust · egui · SQLite" data-title="TRLearn Player">
+    <p class="sheet-lede">A native desktop player for learning Turkish from real audio and video. Turkish subtitles sit on top, English underneath, and every Turkish word is clickable.</p>
+    <h3>Highlights</h3>
+    <ul class="sheet-list">
+      <li>Plays <code>.mp3</code>, <code>.wav</code>, <code>.mp4</code>, <code>.mkv</code> and <code>.webm</code>, with both subtitle tracks kept in sync.</li>
+      <li>Click a word and playback pauses on its meaning. The offline dictionary has about 22,000 headwords and 13,000 inflected forms from Wiktionary.</li>
+      <li>Words it doesn’t know directly are worked out by stripping suffixes: <span lang="tr">kitabı → kitap</span>, <span lang="tr">gidiyorum → gitmek</span>.</li>
+      <li>Saved words keep their sentence and timestamp, and replay a 5-second clip of the moment you heard them.</li>
+      <li>Keyboard first: Space to play, arrows to seek or jump sentence by sentence.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>Rust</li><li>eframe / egui</li><li>rodio</li><li>rusqlite</li><li>FFmpeg</li></ul>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://github.com/ghost545a/trlearn-player">View source</a>
+    </div>
+  </template>
+
+  <template id="t-ephemeral" data-eyebrow="HTML · CSS · JavaScript" data-title="Ephemeral">
+    <figure class="sheet-figure"><picture><source srcset="assets/ephemeral-light.webp" media="(prefers-color-scheme: light)"><img src="assets/ephemeral-dark.webp" width="1200" height="1200" alt="Ephemeral with four tasks."></picture></figure>
+    <p class="sheet-lede">A calm, glassy to-do list that lives only in memory. No local storage, no cookies, no server. Refresh and you start clean, unless you download your list first.</p>
+    <h3>Highlights</h3>
+    <ul class="sheet-list">
+      <li>Add, edit inline, complete and delete, with small animations that confirm each action.</li>
+      <li>Reorder with the drag handle, by mouse or touch, or with <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>.</li>
+      <li>Export as JSON or a Markdown checklist. Import by dropping a file onto the window, then choose Replace or Merge.</li>
+      <li>A refresh guard warns you only when there’s something you haven’t saved.</li>
+      <li>Light and dark themes that follow your system.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li></ul>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://moh-todolist.vercel.app/">Try it live</a>
+      <a class="btn btn-tinted" href="https://github.com/ghost545a/ephemeral-todolist">View source</a>
+    </div>
+  </template>
+
+  <template id="t-subtitles" data-eyebrow="Python · Flask · Bootstrap" data-title="Movie Subtitle Translator">
+    <figure class="sheet-figure dark"><img src="assets/subtitle-translator.webp" width="1600" height="611" alt="The translator page in Arabic."></figure>
+    <p class="sheet-lede"><span lang="ar" dir="rtl">تعريب الأفلام</span>: upload a subtitle file, pick two languages, and download the translation when the progress bar fills.</p>
+    <h3>Highlights</h3>
+    <ul class="sheet-list">
+      <li>Translates <code>.srt</code> subtitles between more than 20 languages.</li>
+      <li>Shows real-time progress as each line is translated.</li>
+      <li>Arabic-first, right-to-left interface.</li>
+      <li>The finished file downloads straight away.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>Python</li><li>Flask</li><li>Bootstrap</li><li>JavaScript</li></ul>
+    <p class="sheet-note">The live version runs on a free host, so it can take a minute to wake up.</p>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://subtitle-arabic-maker.onrender.com/">Open the app</a>
+      <a class="btn btn-tinted" href="https://github.com/ghost545a/Subtitle_Arabic_maker">View source</a>
+    </div>
+  </template>
+
+  <template id="t-pomodoro" data-eyebrow="Rust · Slint" data-title="Lightweight Pomodoro Timer">
+    <p class="sheet-lede">A fast, minimal Pomodoro timer with a crisp dark interface. It runs on Slint’s software renderer, so it barely touches your CPU or memory.</p>
+    <h3>What I did</h3>
+    <ul class="sheet-list">
+      <li>Fixed a bug where pausing and resuming made the timer jump.</li>
+      <li>Added a cycle counter (1/4 to 4/4), with a long break after every fourth session.</li>
+      <li>Shrank the icon to under 2&nbsp;KB and the executable to about 2.7&nbsp;MB.</li>
+      <li>Added unit tests for the timer logic.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>Rust</li><li>Slint</li><li>GitHub Actions</li></ul>
+    <p class="sheet-note">I maintain this fork of <a href="https://github.com/reRumbl/LightweightPomodoroTimer">reRumbl’s original timer</a>.</p>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://github.com/ghost545a/LightweightPomodoroTimer/releases">Download for Windows</a>
+      <a class="btn btn-tinted" href="https://github.com/ghost545a/LightweightPomodoroTimer">View source</a>
+    </div>
+  </template>
+
+  <template id="t-matchten" data-eyebrow="KaiOS 3.x · Coming soon" data-title="Match Numbers 10">
+    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/match-numbers-10.webp" width="480" height="640" alt="Match Numbers 10 gameplay."></span></figure>
+    <p class="sheet-lede">A number puzzle. Match two numbers that are equal, or that add up to ten, and clear the board to reach the next stage.</p>
+    <h3>How it plays</h3>
+    <ul class="sheet-list">
+      <li>Pairs must connect in a row, column or diagonal, with only cleared cells between them.</li>
+      <li>The last cell of a row links to the first cell of the next one.</li>
+      <li>Stuck? Ask for a hint, or add the remaining numbers to the end of the board.</li>
+      <li>Move with the D-pad, or go diagonally with 1, 3, 7 and 9.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>JavaScript</li><li>HTML &amp; CSS</li><li>KaiOS 3.x</li></ul>
+  </template>
+
+  <template id="t-petdoku" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Petdoku">
+    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/petdoku.webp" width="480" height="640" alt="Petdoku gameplay."></span></figure>
+    <p class="sheet-lede">Cozy sudoku with pets instead of numbers. Fill every row, column and box with one of each pet.</p>
+    <h3>How it plays</h3>
+    <ul class="sheet-list">
+      <li>Three difficulties: Easy, Medium and Hard.</li>
+      <li>A wrong pet costs a heart. Lose three and the pets get mixed up.</li>
+      <li>Hints help when you’re stuck. Only hint-free solves count toward your best time.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>JavaScript (ES5)</li><li>HTML &amp; CSS</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
+  </template>
+
+  <template id="t-skystack" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Sky Stack">
+    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/sky-stack.webp" width="480" height="640" alt="Sky Stack gameplay."></span></figure>
+    <p class="sheet-lede">A crane swings a new apartment floor back and forth. Press OK to drop it, and stack the tallest tower in town.</p>
+    <h3>How it plays</h3>
+    <ul class="sheet-list">
+      <li>Land a floor dead center for a <strong>Perfect</strong>. Three in a row steady the tower.</li>
+      <li>Floors that hang too far over the edge fall off and cost a heart.</li>
+      <li><strong>Endless:</strong> it speeds up every 10 floors, and the wind picks up from floor 20.</li>
+      <li><strong>Levels:</strong> 10 towers with target heights, each worth up to three stars.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>JavaScript (ES5)</li><li>Canvas</li><li>Web Audio</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
