@@ -3,190 +3,83 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Mohammed Maharm</title>
-  <meta name="description" content="Mohammed Maharm, a student developer from Yemen. Tools for learning languages in Rust and WebAssembly, and small games for KaiOS phones.">
+  <title>Mohammed Anwar Mahram · Chemical Engineering</title>
+  <meta name="description" content="Mohammed Anwar Mahram, chemical engineering student at Atılım University: membrane research for blue energy (reverse electrodialysis), plant design, and product design.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Mohammed Maharm">
-  <meta property="og:description" content="Tools for learning languages, and games for tiny screens.">
-  <meta property="og:image" content="https://ghost545a.github.io/assets/turkce-map.webp">
+  <meta property="og:title" content="Mohammed Anwar Mahram · Chemical Engineering">
+  <meta property="og:description" content="Chemical engineering student working on membranes and blue energy.">
+  <meta property="og:image" content="https://ghost545a.github.io/assets/membrane-science.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css?v=f626289e">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-  <a class="skip" href="#work">Skip to projects</a>
+  <a class="skip" href="#research">Skip to research</a>
 
   <div class="page" id="page">
-    <!-- Translucent navigation: content scrolls underneath -->
     <header class="nav" id="nav">
       <div class="nav-inner">
-        <a class="nav-name" href="#top" aria-label="Mohammed Maharm, back to top">Mohammed Maharm</a>
+        <a class="nav-name" href="#top" aria-label="Mohammed Anwar Mahram, back to top">Mohammed Anwar Mahram</a>
         <nav aria-label="Sections">
           <ul class="nav-links">
-            <li><a href="#work" data-section="work">Projects</a></li>
-            <li><a href="#games" data-section="games">Games</a></li>
-            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#research" data-section="research">Research</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li class="nav-opt"><a href="#skills" data-section="skills">Skills</a></li>
+            <li class="nav-opt"><a href="#education" data-section="education">Education</a></li>
+            <li><a href="coding.html">Coding</a></li>
           </ul>
         </nav>
-        <a class="nav-cta" href="https://github.com/ghost545a" rel="me">GitHub</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 14.6A8.5 8.5 0 0 1 9.4 3.6 8.5 8.5 0 1 0 20.4 14.6z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.6"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <a class="nav-cta" href="assets/Mohammed-Anwar-Mahram-CV.pdf" download>CV (PDF)</a>
       </div>
     </header>
 
     <main id="top">
-      <!-- Hero -->
       <section class="hero">
         <div class="wrap">
-          <img class="avatar reveal" src="https://avatars.githubusercontent.com/u/78747137?v=4&amp;s=320" width="112" height="112" alt="Portrait of Mohammed Maharm">
-          <p class="hero-hello reveal" style="--d:1">Hi, I’m Mohammed.</p>
-          <h1 class="hero-title reveal" style="--d:2">I build tools for learning languages, and games for&nbsp;tiny&nbsp;screens.</h1>
-          <p class="hero-lede reveal" style="--d:3">I’m a student developer from Yemen. I write Rust, WebAssembly and plain JavaScript, and most of what I make either helps me learn Turkish or fits on a 240&nbsp;×&nbsp;320 phone display.</p>
+          <img class="avatar reveal" src="https://avatars.githubusercontent.com/u/78747137?v=4&amp;s=320" width="112" height="112" alt="Portrait of Mohammed Anwar Mahram">
+          <p class="hero-hello reveal" style="--d:1">Hi, I’m Mohammed Anwar Mahram.</p>
+          <h1 class="hero-title reveal" style="--d:2">Chemical engineering student working on membranes and blue&nbsp;energy.</h1>
+          <p class="hero-lede reveal" style="--d:3">I study chemical engineering at Atılım University in Ankara (BSc, expected 2027). My research looks at how ions move through ion-exchange membranes, the heart of reverse electrodialysis, which turns the meeting of river water and sea water into electricity.</p>
           <div class="hero-actions reveal" style="--d:4">
-            <a class="btn btn-fill" href="#work">See my projects</a>
-            <a class="btn btn-plain" href="https://github.com/ghost545a" rel="me">Follow on GitHub <span aria-hidden="true">›</span></a>
+            <a class="btn btn-fill" href="assets/Mohammed-Anwar-Mahram-CV.pdf" download>Download my CV</a>
+            <a class="btn btn-plain" href="https://ghost545a.github.io/membrane-science/">Visit Membrane Science <span aria-hidden="true">›</span></a>
           </div>
         </div>
       </section>
 
-      <!-- By the numbers -->
-      <section class="stats" aria-label="By the numbers">
+      <section class="stats" aria-label="At a glance">
         <div class="wrap">
           <dl class="stats-grid">
-            <div class="stat reveal"><dt>Turkish grammar rules mapped</dt><dd>350</dd></div>
-            <div class="stat reveal" style="--d:1"><dt>dictionary words, fully offline</dt><dd>22,000</dd></div>
-            <div class="stat reveal" style="--d:2"><dt>languages for subtitles</dt><dd>20+</dd></div>
-            <div class="stat reveal" style="--d:3"><dt>KaiOS games on the way</dt><dd>4</dd></div>
+            <div class="stat reveal"><dt>t/y PTA plant designed with my team</dt><dd>400k</dd></div>
+            <div class="stat reveal" style="--d:1"><dt>semesters on the honor list</dt><dd>3</dd></div>
+            <div class="stat reveal" style="--d:2"><dt>TOEFL iBT, CEFR C1</dt><dd>100</dd></div>
+            <div class="stat reveal" style="--d:3"><dt>languages: Arabic, English, Turkish</dt><dd>3</dd></div>
           </dl>
         </div>
       </section>
 
-      <!-- Projects -->
-      <section class="section" id="work" aria-labelledby="work-title">
+      <!-- Research -->
+      <section class="section" id="research" aria-labelledby="research-title">
         <div class="wrap">
           <header class="section-head reveal">
-            <p class="eyebrow">Projects</p>
-            <h2 id="work-title" class="section-title">Things I’ve built.</h2>
-            <p class="section-lede">Open any project for the details, or jump straight to the code.</p>
+            <p class="eyebrow">Research</p>
+            <h2 id="research-title" class="section-title">Blue energy, one ion at a time.</h2>
+            <p class="section-lede">A bachelor’s student research project funded by Atılım University (LAP), under the guidance and supervision of Assoc. Prof. Dr. Enver Güler.</p>
           </header>
 
           <div class="tiles">
-            <!-- Featured: Türkçe Dilbilgisi -->
-            <a class="tile tile-feature reveal" href="https://github.com/ghost545a/turkce-dilbilgisi" data-sheet="turkce">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">Rust · WebAssembly</p>
-                <h3 class="tile-title">Türkçe Dilbilgisi</h3>
-                <p class="tile-text">Turkish grammar as a map you can explore. 350 rules, zoomable, searchable, and running in the browser.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual">
-                <div class="shot shot-window">
-                  <img src="assets/turkce-map.webp" width="1600" height="1000" loading="lazy" alt="The Türkçe Dilbilgisi radial map: grammar topics branch out from a red centre node into hundreds of rules.">
-                </div>
-              </div>
-            </a>
-
-            <!-- TRLearn Player -->
-            <a class="tile reveal" href="https://github.com/ghost545a/trlearn-player" data-sheet="trlearn">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">Native Rust desktop app</p>
-                <h3 class="tile-title">TRLearn Player</h3>
-                <p class="tile-text">Watch in Turkish with English underneath. Tap any word to see what it means.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual" aria-hidden="true">
-                <div class="mock-player">
-                  <div class="mp-video">
-                    <div class="mp-card">
-                      <span class="mp-word">gidiyorum</span>
-                      <span class="mp-root">gitmek · <em>to go</em></span>
-                    </div>
-                  </div>
-                  <div class="mp-subs">
-                    <p class="mp-tr" lang="tr">Bu akşam sinemaya <mark>gidiyorum</mark>.</p>
-                    <p class="mp-en">I’m going to the cinema tonight.</p>
-                  </div>
-                  <div class="mp-bar"><span></span></div>
-                </div>
-              </div>
-            </a>
-
-            <!-- Ephemeral -->
-            <a class="tile reveal" href="https://github.com/ghost545a/ephemeral-todolist" data-sheet="ephemeral" style="--d:1">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">JavaScript · No dependencies</p>
-                <h3 class="tile-title">Ephemeral</h3>
-                <p class="tile-text">A to-do list that forgets on purpose. Nothing is stored until you choose to save it.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual">
-                <div class="shot shot-window">
-                  <picture>
-                    <source srcset="assets/ephemeral-light.webp" media="(prefers-color-scheme: light)">
-                    <img src="assets/ephemeral-dark.webp" width="1200" height="1200" loading="lazy" alt="Ephemeral showing four tasks in a glassy card, with import and export buttons.">
-                  </picture>
-                </div>
-              </div>
-            </a>
-
-            <!-- Subtitle translator -->
-            <a class="tile reveal" href="https://github.com/ghost545a/Subtitle_Arabic_maker" data-sheet="subtitles">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">Python · Flask</p>
-                <h3 class="tile-title">Movie Subtitle Translator</h3>
-                <p class="tile-text">Turn an <code>.srt</code> file into Arabic, or 20 other languages, and watch the progress live.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual">
-                <div class="shot shot-window">
-                  <img src="assets/subtitle-translator.webp" width="1600" height="611" loading="lazy" alt="The translator page, titled تعريب الأفلام, with a file picker, English and Arabic language menus, and a progress bar at 64%.">
-                </div>
-              </div>
-            </a>
-
-            <!-- Pomodoro -->
-            <a class="tile reveal" href="https://github.com/ghost545a/LightweightPomodoroTimer" data-sheet="pomodoro" style="--d:1">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">Rust · Slint</p>
-                <h3 class="tile-title">Lightweight Pomodoro</h3>
-                <p class="tile-text">A focus timer in a 2.7&nbsp;MB executable. I fixed its timer drift and added cycle tracking.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual" aria-hidden="true">
-                <div class="mock-timer">
-                  <p class="mt-label">Work · 1/4</p>
-                  <p class="mt-time">25:00</p>
-                  <div class="mt-buttons">
-                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
-                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.6 4.7l1.9.6A5 5 0 1 0 12 7v2.5L8 6l4-3.5z"/></svg></span>
-                    <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M6 5.5v13l9-6.5zM16 5.5h2.2v13H16z"/></svg></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <!-- Featured: BioGas Inc. -->
-            <a class="tile tile-feature reveal" href="https://ghost545a.github.io/biogas-inc/" data-sheet="biogas">
-              <div class="tile-copy">
-                <p class="tile-eyebrow">three.js · English &amp; Arabic</p>
-                <h3 class="tile-title">BioGas Inc.</h3>
-                <p class="tile-text">How livestock manure in 22 Arab countries could cook for 8 million homes, told as a narrated 3D walkthrough.</p>
-                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
-              </div>
-              <div class="tile-visual">
-                <div class="shot shot-window">
-                  <img src="assets/biogas-inc.webp" width="1600" height="901" loading="lazy" alt="A 3D diorama: a gas pipe glows blue from an underground digester to a stove beside a small house, with the caption Cooking gas, 8.0 million homes.">
-                </div>
-              </div>
-            </a>
-
-            <!-- Featured: Membrane Science -->
             <a class="tile tile-feature reveal" href="https://ghost545a.github.io/membrane-science/" data-sheet="membrane">
               <div class="tile-copy">
-                <p class="tile-eyebrow">three.js · English, Türkçe &amp; Arabic</p>
+                <p class="tile-eyebrow">Research project ATÜ-LAP-2526-07 · 2025–26</p>
                 <h3 class="tile-title">Membrane Science</h3>
-                <p class="tile-text">My bachelor's research project on blue energy: chloride crossing an anion exchange membrane, replayed in 3D from our real lab data.</p>
+                <p class="tile-text">Chloride transport through a Fumasep FAA-3-PK-75 anion exchange membrane, measured in a two-compartment diffusion cell and replayed in 3D from our lab data.</p>
                 <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
               </div>
               <div class="tile-visual">
@@ -195,90 +88,231 @@
                 </div>
               </div>
             </a>
+
+            <a class="tile reveal" href="#research" data-sheet="mubak">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Congress · 2026</p>
+                <h3 class="tile-title">MÜBAK 2026</h3>
+                <p class="tile-text">Oral and poster presentation of our blue-energy research at the Engineering Sciences and Researches Student Congress.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <img src="assets/diffusion-cell-photo.webp" width="1200" height="900" loading="lazy" alt="Our two-compartment diffusion cell in the lab: donor and receiver bottles with red caps, joined by a clamp holding the membrane.">
+                </div>
+              </div>
+            </a>
+
+            <a class="tile reveal" href="#research" data-sheet="redtrial" style="--d:1">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">Next · 2026–27</p>
+                <h3 class="tile-title">Lab RED trial</h3>
+                <p class="tile-text">A bench-scale reverse electrodialysis stack to measure voltage and power density with the membranes we characterise.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <img src="assets/red-rig.webp" width="1100" height="610" loading="lazy" alt="A 3D lab bench: river water and seawater tanks, peristaltic pumps and filters feeding a RED stack of alternating membranes, wired to a multimeter.">
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- Games -->
-      <section class="section section-games" id="games" aria-labelledby="games-title">
+      <!-- Engineering projects -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="wrap">
           <header class="section-head reveal">
-            <p class="eyebrow">Games</p>
-            <h2 id="games-title" class="section-title">Made for KaiOS.</h2>
-            <p class="section-lede">Small games for feature phones with a D-pad, two soft keys and no touchscreen. Written in plain ES5 so the same code runs on KaiOS 2.5 and 3.x. Coming to the KaiStore.</p>
+            <p class="eyebrow">Engineering projects</p>
+            <h2 id="projects-title" class="section-title">From plant to product.</h2>
+            <p class="section-lede">Team design projects from my chemical engineering degree.</p>
           </header>
-        </div>
-        <div class="games-scroller" role="list">
-          <button class="game reveal" type="button" data-sheet="matchten" role="listitem">
-            <span class="phone"><img src="assets/match-numbers-10.webp" width="480" height="640" loading="lazy" alt="Match Numbers 10: a grid of digits with one cell selected."></span>
-            <span class="game-name">Match Numbers 10</span>
-            <span class="game-text">Pair equal numbers, or two that make ten.</span>
-          </button>
-          <button class="game reveal" type="button" data-sheet="petdoku" role="listitem" style="--d:1">
-            <span class="phone"><img src="assets/petdoku.webp" width="480" height="640" loading="lazy" alt="Petdoku: a sudoku grid filled with pet faces instead of numbers."></span>
-            <span class="game-name">Petdoku</span>
-            <span class="game-text">Cozy sudoku with pets instead of numbers.</span>
-          </button>
-          <button class="game reveal" type="button" data-sheet="skystack" role="listitem" style="--d:2">
-            <span class="phone"><img src="assets/sky-stack.webp" width="480" height="640" loading="lazy" alt="Sky Stack: a crane swings a floor above a three-storey tower."></span>
-            <span class="game-name">Sky Stack</span>
-            <span class="game-text">Drop swinging floors and build the tallest tower.</span>
-          </button>
-          <button class="game reveal" type="button" data-sheet="petpens" role="listitem" style="--d:3">
-            <span class="phone"><img src="assets/pet-pens.webp" width="480" height="640" loading="lazy" alt="Pet Pens: a 7 by 7 board split into coloured pens, with two cats placed and ruled-out squares crossed."></span>
-            <span class="game-name">Pet Pens</span>
-            <span class="game-text">Give every pet its own row, column and pen.</span>
-          </button>
+
+          <div class="tiles">
+            <a class="tile reveal" href="#projects" data-sheet="pta">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">CHE406 Chemical Engineering Design II · 2026</p>
+                <h3 class="tile-title">PTA plant in Türkiye</h3>
+                <p class="tile-text">A 400,000 t/y purified terephthalic acid plant in Bandırma using the Amoco-BP process, from reactors to cash flow.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual" aria-hidden="true">
+                <div class="mock-pfd">
+                  <span>p-Xylene + air</span><i></i>
+                  <span>Oxidation CSTR ×2</span><i></i>
+                  <span>Flash · Crystallizer</span><i></i>
+                  <span>Hydrogenation</span><i></i>
+                  <span class="pfd-out">Purified TPA</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="tile reveal" href="#projects" data-sheet="hydrofab" style="--d:1">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">CHE438 Product design · 2026</p>
+                <h3 class="tile-title">HydroFab</h3>
+                <p class="tile-text">A superhydrophobic polyester fabric: SiO₂ nanoparticles and a silicone coating, applied by dip coating.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual" aria-hidden="true">
+                <div class="mock-drop">
+                  <svg viewBox="0 0 320 200">
+                    <path d="M146 149 A50 50 0 1 1 174 149 Z" class="drop"/>
+                    <ellipse cx="146" cy="82" rx="9" ry="5" class="shine"/>
+                    <line x1="40" y1="150" x2="280" y2="150" class="fabric"/>
+                    <text x="222" y="120">θ &gt; 150°</text>
+                  </svg>
+                </div>
+              </div>
+            </a>
+
+            <a class="tile tile-wide reveal" href="#projects" data-sheet="water">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">CMPE468 Machine Learning for Engineers · 2026</p>
+                <h3 class="tile-title">Is this water safe to drink?</h3>
+                <p class="tile-text">Machine learning on 3,276 water samples and 9 physicochemical measurements, from pH to sulfate, to predict potability.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual" aria-hidden="true">
+                <div class="mock-roc">
+                  <svg viewBox="0 0 320 210">
+                    <line x1="40" y1="180" x2="290" y2="180" class="axis"/><line x1="40" y1="180" x2="40" y2="20" class="axis"/>
+                    <line x1="40" y1="180" x2="290" y2="20" class="chance"/>
+                    <path d="M40 180 C70 118 120 78 180 56 S260 28 290 20" class="curve"/>
+                    <text x="182" y="120" class="lbl-strong">SVM · AUC 0.707</text>
+                    <text x="210" y="160" class="lbl">chance · 0.5</text>
+                    <text x="40" y="200" class="lbl">false positive rate</text>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
-      <!-- About -->
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="wrap about">
+      <!-- Experience: internships will be added here -->
+      <section class="section" id="experience" aria-labelledby="experience-title" hidden>
+        <div class="wrap">
           <header class="section-head reveal">
-            <p class="eyebrow">About</p>
-            <h2 id="about-title" class="section-title">A bit about me.</h2>
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title" class="section-title">Internships.</h2>
           </header>
-          <div class="about-body">
-            <div class="about-text reveal">
-              <p>I’m Mohammed Maharm, a student in Yemen. I started small: an HTML page for an ICT class, a calculator in Python, a first file of C++. These days I mostly write Rust.</p>
-              <p>Many of my projects come from learning Turkish. I wanted to see the whole grammar at once, so I drew it as a map. I wanted to tap a word in a subtitle and get its meaning, so I built a player that does that.</p>
-              <p>I also like the limits of tiny screens. My KaiOS games run on phones with no touchscreen, so every pixel and every key press has to earn its place.</p>
-            </div>
-            <aside class="about-side reveal" style="--d:1" aria-label="Tools I use">
-              <h3 class="side-title">What I work with</h3>
-              <ul class="chips">
-                <li>Rust</li><li>WebAssembly</li><li>JavaScript</li><li>HTML &amp; CSS</li>
-                <li>Python</li><li>Flask</li><li>egui</li><li>Slint</li><li>SQLite</li><li>KaiOS</li>
-              </ul>
-            </aside>
-          </div>
-
-          <div class="timeline reveal">
-            <h3 class="side-title">How I got here</h3>
+          <div class="timeline cv-list reveal">
             <ol>
-              <li><span class="tl-year">2021</span><span class="tl-what"><a href="https://github.com/ghost545a/ICT_Project">ICT Project</a>, my first website, in HTML and CSS.</span></li>
-              <li><span class="tl-year">2022</span><span class="tl-what"><a href="https://github.com/ghost545a/pycalculater">A Python calculator</a> and <a href="https://github.com/ghost545a/Cppfirst">my first C++</a>.</span></li>
-              <li><span class="tl-year">2025</span><span class="tl-what">A Flask app that translates movie subtitles into Arabic.</span></li>
-              <li><span class="tl-year">2026</span><span class="tl-what">Rust: a Turkish learning player, a grammar map in WebAssembly, a Pomodoro timer. Plus four KaiOS games.</span></li>
+              <!-- <li><span class="tl-year">2025</span><span class="tl-what"><strong>Company</strong>, City · Department. What I did.</span></li> -->
             </ol>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
-      <section class="contact">
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title" class="section-title">What I work with.</h2>
+          </header>
+          <div class="cv-grid">
+            <div class="cv-block reveal">
+              <h3 class="side-title">Process engineering</h3>
+              <ul class="chips"><li>Aspen Plus</li><li>CAPCOST</li><li>Mass &amp; energy balances</li><li>Reactor &amp; separator design</li><li>PFDs</li><li>Techno-economic analysis</li></ul>
+            </div>
+            <div class="cv-block reveal" style="--d:1">
+              <h3 class="side-title">Laboratory</h3>
+              <ul class="chips"><li>Ion-exchange membranes</li><li>Diffusion-cell experiments</li><li>Conductivity measurement</li><li>Membrane pretreatment</li></ul>
+            </div>
+            <div class="cv-block reveal">
+              <h3 class="side-title">Software</h3>
+              <ul class="chips"><li>MATLAB</li><li>SolidWorks</li><li>Excel</li><li>Word</li><li>PowerPoint</li><li>LaTeX</li></ul>
+            </div>
+            <div class="cv-block reveal" style="--d:1">
+              <h3 class="side-title">Data, machine learning &amp; coding</h3>
+              <ul class="chips"><li>Python</li><li>NumPy</li><li>pandas</li><li>Matplotlib</li><li>Data analysis</li><li>Machine learning</li><li>Orange Data Mining</li><li>AI agentic coding</li><li>HTML, CSS &amp; JavaScript</li><li>three.js</li></ul>
+              <p class="cv-note">I build software and websites with AI coding agents. <a href="coding.html">See my coding projects ›</a></p>
+            </div>
+            <div class="cv-block cv-span reveal">
+              <h3 class="side-title">Languages</h3>
+              <ul class="lang-list">
+                <li><span class="lang-name">Arabic</span><span class="lang-level">Native</span></li>
+                <li><span class="lang-name">English</span><span class="lang-level">C1 · TOEFL iBT 100/120 (February 2026)</span>
+                  <span class="lang-detail">Reading 5.0 · Listening 5.5 · Speaking 4.0 · Writing 5.0 (out of 6)</span></li>
+                <li><span class="lang-name">Turkish</span><span class="lang-level">B1</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Education</p>
+            <h2 id="education-title" class="section-title">Atılım University.</h2>
+            <p class="section-lede">BSc Chemical Engineering, Faculty of Engineering, Ankara · 2022 – 2027 (expected) · GPA 3.00 / 4.00</p>
+          </header>
+          <div class="timeline cv-list reveal">
+            <h3 class="side-title">Honors</h3>
+            <ol>
+              <li><span class="tl-year">2026</span><span class="tl-what">Honor student, Spring semester 2025–26</span></li>
+              <li><span class="tl-year">2025</span><span class="tl-what">Honor student, Fall semester 2025–26 · <a href="assets/honor-certificate-fall-2025-26.pdf">Honor certificate (PDF)</a></span></li>
+              <li><span class="tl-year">2023</span><span class="tl-what">Honor student, Spring semester 2022–23</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="section" id="content" aria-labelledby="content-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Content</p>
+            <h2 id="content-title" class="section-title">Chemical engineering, explained in Arabic.</h2>
+            <p class="section-lede">On Instagram I make content that raises awareness of chemical engineering and shares what I learn: what the degree covers, how the projects work, and what the field can do.</p>
+          </header>
+          <div class="reels">
+            <a class="reel reveal" href="https://www.instagram.com/m7nwar/" rel="me">
+              <img src="assets/reel-graduation-project.webp" width="281" height="440" loading="lazy" alt="Reel cover in Arabic: How I did my chemical engineering graduation project. 13.5K views.">
+              <span class="reel-title" lang="ar" dir="rtl">كيف سويت مشروع التخرج في الهندسة الكيميائية؟</span>
+              <span class="reel-sub">How I did my graduation project · 13.5K views</span>
+            </a>
+            <a class="reel reveal" href="https://www.instagram.com/m7nwar/" rel="me" style="--d:1">
+              <img src="assets/reel-curriculum-map.webp" width="285" height="434" loading="lazy" alt="Reel cover: a mind map of the chemical engineering BSc curriculum in Arabic and English, from chemistry and basic engineering to mathematics and design. 18K views.">
+              <span class="reel-title" lang="ar" dir="rtl">مناهج الهندسة الكيميائية</span>
+              <span class="reel-sub">The ChemE BSc curriculum as a map · 18K views</span>
+            </a>
+          </div>
+          <p class="reels-cta reveal"><a class="btn btn-tinted" href="https://www.instagram.com/m7nwar/" rel="me">Follow @m7nwar on Instagram</a></p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
         <div class="wrap reveal">
-          <h2 class="contact-title">Want to see more?</h2>
-          <p class="contact-text">Everything I make is on GitHub. Star something, open an issue, or say hello.</p>
-          <a class="btn btn-fill btn-large" href="https://github.com/ghost545a" rel="me">github.com/ghost545a</a>
+          <h2 class="contact-title">Let’s talk.</h2>
+          <p class="contact-text">Open to internships and research opportunities in chemical engineering. References are available on request.</p>
+          <div class="contact-actions">
+            <a class="btn btn-fill btn-large" href="mailto:m7nwar@icloud.com">m7nwar@icloud.com</a>
+          </div>
+          <ul class="contact-facts">
+            <li><a href="tel:+905528331814">+90 552 833 18 14</a></li>
+            <li>Ankara, Türkiye</li>
+            <li>Born 2004</li>
+          </ul>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/m7nwar/" rel="me">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/m7nwar/" rel="me">Instagram</a></li>
+            <li><a href="https://github.com/ghost545a" rel="me">GitHub</a></li>
+            <li><a href="assets/Mohammed-Anwar-Mahram-CV.pdf" download>CV (PDF)</a></li>
+            <li><a href="coding.html">Coding projects</a></li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="wrap">
-        <p>© 2026 Mohammed Maharm</p>
+        <p>© 2026 Mohammed Anwar Mahram</p>
         <p>Built by hand with HTML, CSS and a little JavaScript.</p>
       </div>
     </footer>
@@ -300,194 +334,91 @@
       </div>
     </div>
     <div class="sheet-body" id="sheet-body"></div>
-  </div>
 
-  <!-- Sheet content. Kept in the page so it is searchable and works with plain HTML. -->
-  <template id="t-turkce" data-eyebrow="Rust · WebAssembly · Canvas" data-title="Türkçe Dilbilgisi">
-    <figure class="sheet-figure dark"><img src="assets/turkce-map.webp" width="1600" height="1000" alt="The radial grammar map."></figure>
-    <p class="sheet-lede">An interactive radial mind-map of Turkish grammar. It’s written in Rust, compiled to WebAssembly, and drawn on an HTML canvas.</p>
-    <h3>Highlights</h3>
-    <ul class="sheet-list">
-      <li>10 rings and 350 rules, each with a suffix formula, vowel-harmony notes, exceptions, a CEFR level and three example sentences.</li>
-      <li>Click to expand a branch, scroll to zoom at the cursor, drag to pan. Live search opens the path to any match.</li>
-      <li><strong>Study by level:</strong> the same rules as a house of six CEFR floors, A1 on the ground floor and C2 at the top.</li>
-      <li><strong>Player:</strong> watch a video with Turkish and English subtitles, tap a word to see its meaning, and save it for later.</li>
-      <li>A frequency dictionary of 200 verbs and 150 adjectives.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>Rust</li><li>WebAssembly</li><li>wasm-pack</li><li>Canvas</li><li>JavaScript</li></ul>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://ghost545a.github.io/turkce-dilbilgisi/">Open the live map</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/turkce-dilbilgisi">View source</a>
-    </div>
-  </template>
-
-  <template id="t-biogas" data-eyebrow="three.js · WebGL · English &amp; Arabic" data-title="BioGas Inc.">
-    <figure class="sheet-figure"><img src="assets/biogas-inc.webp" width="1600" height="901" alt="The 3D biogas walkthrough at the cooking-gas step."></figure>
-    <p class="sheet-lede">An interactive 3D walkthrough of turning livestock manure into biogas: from the pen, to the mixing tank, the underground digester, the kitchen stove and back to the fields as fertiliser.</p>
-    <h3>Highlights</h3>
-    <ul class="sheet-list">
-      <li>Seven narrated steps you can play, scrub or jump between, and a scene you can drag to rotate.</li>
-      <li>Real numbers for the 22 Arab League countries: 363 million head of livestock (FAOSTAT 2024), 14.6 billion m³ of biogas a year, enough to cook for 8 million homes if 30% of the manure is collected.</li>
-      <li>English with a British voice-over, and Arabic narrated in a mix of Modern Standard Arabic and Yemeni dialect.</li>
-      <li>Also cut into 16:9 and 9:16 videos with keyword captions and sound design.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>three.js</li><li>JavaScript</li><li>Python</li><li>VoiceStudio</li><li>Playwright</li><li>FFmpeg</li></ul>
-    <p class="sheet-note">A how-to guide and the full method are coming soon.</p>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://ghost545a.github.io/biogas-inc/">Open the site</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/biogas-inc">View source</a>
-    </div>
-  </template>
-
-  <template id="t-membrane" data-eyebrow="three.js · WebGL · English, Türkçe &amp; Arabic" data-title="Membrane Science">
+  <template id="t-membrane" data-eyebrow="Research · ATÜ-LAP-2526-07 · 2025–26" data-title="Membrane Science">
     <figure class="sheet-figure"><img src="assets/membrane-science.webp" width="1100" height="564" alt="The 3D two-compartment diffusion cell near the end of the 180-minute run."></figure>
-    <p class="sheet-lede">An introduction to membrane science and blue energy, built around our bachelor's student research project ATÜ-LAP-2526-07 at Atılım University with Saed Wael Suleiman, under the guidance and supervision of Assoc. Prof. Dr. Enver Güler.</p>
-    <h3>Highlights</h3>
+    <p class="sheet-lede">Blue Energy: the effect of monovalent ion selectivity in membranes on salinity gradient energy generation. A bachelor’s student research project with Saed Wael Suleiman, under the guidance and supervision of Assoc. Prof. Dr. Enver Güler, funded by Atılım University (LAP).</p>
+    <h3>What we did</h3>
     <ul class="sheet-list">
-      <li>A 3D diffusion cell that replays our measured 180 minutes in 10 seconds, then runs a hypothetical 10 seconds to equilibrium: Cl⁻ crosses the Fumasep FAA-3-PK-75 membrane while most Na⁺ is turned back at its surface.</li>
-      <li>Live readouts and a chart from the real data, an apparent salt diffusion coefficient of about 2.2–2.4 × 10⁻¹¹ m²/s, and the next steps for 2026–27.</li>
-      <li>A textbook-level introduction to membranes, and how the Netherlands, Italy, Norway and Japan have tried salinity-gradient power.</li>
-      <li>A 3D bench-scale RED trial rig for our 2026–27 project, with an exploded stack and moving ions.</li>
+      <li>Built a two-compartment diffusion cell: 0.1 M NaCl against deionised water, separated by a Fumasep FAA-3-PK-75 anion exchange membrane (75 µm, 5.31 cm²), both sides stirred.</li>
+      <li>Followed the receiver’s conductivity for 180 minutes and converted it to concentration with Kohlrausch’s law.</li>
+      <li>Found an apparent diffusion coefficient of about 2.2–2.4 × 10⁻¹¹ m²/s: slow, steady transport, a baseline for testing monovalent-selective membranes.</li>
+      <li>Built a three-language website (English, Turkish, Arabic) with a 3D replay of the experiment and a design for our 2026–27 RED trial.</li>
     </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>three.js</li><li>KaTeX</li><li>JavaScript</li><li>Python</li></ul>
-    <p class="sheet-note">How we plan to improve on existing RED plants is coming soon.</p>
     <div class="sheet-actions">
       <a class="btn btn-fill" href="https://ghost545a.github.io/membrane-science/">Open the site</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/membrane-science">View source</a>
+      <a class="btn btn-tinted" href="https://ghost545a.github.io/membrane-science/assets/poster.pdf">Read the poster (PDF)</a>
     </div>
   </template>
 
-  <template id="t-trlearn" data-eyebrow="Rust · egui · SQLite" data-title="TRLearn Player">
-    <p class="sheet-lede">A native desktop player for learning Turkish from real audio and video. Turkish subtitles sit on top, English underneath, and every Turkish word is clickable.</p>
+  <template id="t-mubak" data-eyebrow="Congress · 2026" data-title="MÜBAK 2026">
+    <figure class="sheet-figure"><img src="assets/diffusion-cell-photo.webp" width="1200" height="900" alt="The two-compartment diffusion cell used in the study."></figure>
+    <p class="sheet-lede">We presented “Blue Energy: The effect of monovalent ion selectivity in membranes on salinity gradient energy generation” at the MÜBAK 2026 Engineering Sciences and Researches Student Congress, as an oral talk and as a poster.</p>
+    <h3>The talk covered</h3>
+    <ul class="sheet-list">
+      <li>Why salinity gradient energy and reverse electrodialysis matter, and how multivalent ions lower RED performance.</li>
+      <li>Our diffusion-cell method, the chloride transport results, and the plan for future work.</li>
+    </ul>
+    <p class="sheet-note">With Saed Wael Suleiman; advisor Assoc. Prof. Dr. Enver Güler.</p>
+  </template>
+
+  <template id="t-redtrial" data-eyebrow="Next · 2026–27" data-title="Lab RED trial">
+    <figure class="sheet-figure"><img src="assets/red-rig.webp" width="1100" height="610" alt="The 3D design of the bench-scale RED trial rig."></figure>
+    <p class="sheet-lede">The next step of the research: a bench-scale reverse electrodialysis stack fed with river-like and sea-like water.</p>
+    <ul class="sheet-list">
+      <li>Two feed tanks, peristaltic pumps and cartridge filters feeding a stack of alternating cation and anion exchange membranes.</li>
+      <li>An electrode rinse loop and an external load, to measure open-circuit voltage and power density.</li>
+      <li>Planned tests with Mg²⁺, Ca²⁺ and SO₄²⁻ in the feed, to see how monovalent-selective membranes hold up.</li>
+    </ul>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://ghost545a.github.io/membrane-science/#trial">See the 3D design</a>
+    </div>
+  </template>
+
+  <template id="t-pta" data-eyebrow="CHE406 Chemical Engineering Design II · 2026" data-title="PTA plant in Türkiye">
+    <p class="sheet-lede">Design of a purified terephthalic acid (PTA) production plant in Bandırma, Türkiye, using the Amoco-BP process. A team of five; report submitted June 2026.</p>
     <h3>Highlights</h3>
     <ul class="sheet-list">
-      <li>Plays <code>.mp3</code>, <code>.wav</code>, <code>.mp4</code>, <code>.mkv</code> and <code>.webm</code>, with both subtitle tracks kept in sync.</li>
-      <li>Click a word and playback pauses on its meaning. The offline dictionary has about 22,000 headwords and 13,000 inflected forms from Wiktionary.</li>
-      <li>Words it doesn’t know directly are worked out by stripping suffixes: <span lang="tr">kitabı → kitap</span>, <span lang="tr">gidiyorum → gitmek</span>.</li>
-      <li>Saved words keep their sentence and timestamp, and replay a 5-second clip of the moment you heard them.</li>
-      <li>Keyboard first: Space to play, arrows to seek or jump sentence by sentence.</li>
+      <li>400,000 t/y per train, sited at Bandırma for its port, industry and logistics.</li>
+      <li>p-Xylene oxidation in two CSTRs in series at 225 °C (TPA yield about 95–97%), then flash separation, crystallisation, centrifuging and drying.</li>
+      <li>A fixed-bed hydrogenation reactor to remove the 4-CBA impurity, and distillation to recover acetic acid.</li>
+      <li>Mass and energy balances worked out by hand, then checked in Aspen; partial heat integration for the strongly exothermic oxidation.</li>
+      <li>Equipment costed in CAPCOST (total module cost about 241 MUSD); total capital investment about 398 MUSD, revenue about 340 MUSD/y and a positive NPV of about 8.9 MUSD.</li>
     </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>Rust</li><li>eframe / egui</li><li>rodio</li><li>rusqlite</li><li>FFmpeg</li></ul>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://github.com/ghost545a/trlearn-player">View source</a>
-    </div>
+    <h3>Tools</h3>
+    <ul class="chips"><li>Aspen Plus</li><li>CAPCOST</li><li>Excel</li></ul>
+    <p class="sheet-note">Instructors: Assoc. Prof. Dr. Sertan Yel, Assoc. Prof. Dr. Enver Güler, Assist. Prof. Dr. Hakan Demir.</p>
   </template>
 
-  <template id="t-ephemeral" data-eyebrow="HTML · CSS · JavaScript" data-title="Ephemeral">
-    <figure class="sheet-figure"><picture><source srcset="assets/ephemeral-light.webp" media="(prefers-color-scheme: light)"><img src="assets/ephemeral-dark.webp" width="1200" height="1200" alt="Ephemeral with four tasks."></picture></figure>
-    <p class="sheet-lede">A calm, glassy to-do list that lives only in memory. No local storage, no cookies, no server. Refresh and you start clean, unless you download your list first.</p>
+  <template id="t-water" data-eyebrow="CMPE468 Machine Learning for Engineers · 2026" data-title="Water potability prediction">
+    <p class="sheet-lede">Can a model tell drinkable water from unsafe water using routine physicochemical measurements? A five-person team project from my machine learning course, linking data science with my chemical engineering background. Supervised by Dr. Emel Savku.</p>
+    <h3>What we did</h3>
+    <ul class="sheet-list">
+      <li>Used a public dataset of 3,276 water samples with 9 features: pH, hardness, total dissolved solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes and turbidity.</li>
+      <li>Imputed missing values, normalised the data, ranked features and tested PCA for dimensionality reduction.</li>
+      <li>Compared logistic regression, k-NN, SVM (RBF kernel), random forest and gradient boosting with 10-fold stratified cross-validation, on the original, undersampled and oversampled data.</li>
+    </ul>
+    <h3>What we found</h3>
+    <ul class="sheet-list">
+      <li>The problem is strongly non-linear: logistic regression was close to chance (AUC 0.502).</li>
+      <li>The best and most balanced result was SVM on the undersampled data: AUC 0.707, F1 0.675, using only real samples. Random forest was the other strong model.</li>
+      <li>Oversampling made k-NN look far better than it is (AUC 0.858), because duplicated samples end up in both training and validation folds.</li>
+    </ul>
+    <h3>Tools</h3>
+    <ul class="chips"><li>Orange Data Mining</li><li>Machine learning</li><li>Data preprocessing</li></ul>
+  </template>
+
+  <template id="t-hydrofab" data-eyebrow="CHE438 Product design · 2026" data-title="HydroFab">
+    <p class="sheet-lede">A chemical product design for a superhydrophobic, breathable textile, developed as the start-up concept “HydroFab” with Gülin Akkan and Selin Erdal.</p>
     <h3>Highlights</h3>
     <ul class="sheet-list">
-      <li>Add, edit inline, complete and delete, with small animations that confirm each action.</li>
-      <li>Reorder with the drag handle, by mouse or touch, or with <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>.</li>
-      <li>Export as JSON or a Markdown checklist. Import by dropping a file onto the window, then choose Replace or Merge.</li>
-      <li>A refresh guard warns you only when there’s something you haven’t saved.</li>
-      <li>Light and dark themes that follow your system.</li>
+      <li>Customer needs from a survey: water repellency, light weight, fast drying, breathability and wash durability.</li>
+      <li>Compared wax, polymer-film and spray coatings, then chose polyester fabric with SiO₂ nanoparticles and a silicone-based hydrophobic agent.</li>
+      <li>Dip coating, drying at 80–120 °C and curing at 120–150 °C, targeting a water contact angle above 150°.</li>
+      <li>Estimated coating cost under 1 USD per m² in bulk, for outdoor jackets, tents, shoes and sportswear.</li>
     </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li></ul>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://moh-todolist.vercel.app/">Try it live</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/ephemeral-todolist">View source</a>
-    </div>
   </template>
 
-  <template id="t-subtitles" data-eyebrow="Python · Flask · Bootstrap" data-title="Movie Subtitle Translator">
-    <figure class="sheet-figure dark"><img src="assets/subtitle-translator.webp" width="1600" height="611" alt="The translator page in Arabic."></figure>
-    <p class="sheet-lede"><span lang="ar" dir="rtl">تعريب الأفلام</span>: upload a subtitle file, pick two languages, and download the translation when the progress bar fills.</p>
-    <h3>Highlights</h3>
-    <ul class="sheet-list">
-      <li>Translates <code>.srt</code> subtitles between more than 20 languages.</li>
-      <li>Shows real-time progress as each line is translated.</li>
-      <li>Arabic-first, right-to-left interface.</li>
-      <li>The finished file downloads straight away.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>Python</li><li>Flask</li><li>Bootstrap</li><li>JavaScript</li></ul>
-    <p class="sheet-note">The live version runs on a free host, so it can take a minute to wake up.</p>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://subtitle-arabic-maker.onrender.com/">Open the app</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/Subtitle_Arabic_maker">View source</a>
-    </div>
-  </template>
-
-  <template id="t-pomodoro" data-eyebrow="Rust · Slint" data-title="Lightweight Pomodoro Timer">
-    <p class="sheet-lede">A fast, minimal Pomodoro timer with a crisp dark interface. It runs on Slint’s software renderer, so it barely touches your CPU or memory.</p>
-    <h3>What I did</h3>
-    <ul class="sheet-list">
-      <li>Fixed a bug where pausing and resuming made the timer jump.</li>
-      <li>Added a cycle counter (1/4 to 4/4), with a long break after every fourth session.</li>
-      <li>Shrank the icon to under 2&nbsp;KB and the executable to about 2.7&nbsp;MB.</li>
-      <li>Added unit tests for the timer logic.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>Rust</li><li>Slint</li><li>GitHub Actions</li></ul>
-    <p class="sheet-note">I maintain this fork of <a href="https://github.com/reRumbl/LightweightPomodoroTimer">reRumbl’s original timer</a>.</p>
-    <div class="sheet-actions">
-      <a class="btn btn-fill" href="https://github.com/ghost545a/LightweightPomodoroTimer/releases">Download for Windows</a>
-      <a class="btn btn-tinted" href="https://github.com/ghost545a/LightweightPomodoroTimer">View source</a>
-    </div>
-  </template>
-
-  <template id="t-matchten" data-eyebrow="KaiOS 3.x · Coming soon" data-title="Match Numbers 10">
-    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/match-numbers-10.webp" width="480" height="640" alt="Match Numbers 10 gameplay."></span></figure>
-    <p class="sheet-lede">A number puzzle. Match two numbers that are equal, or that add up to ten, and clear the board to reach the next stage.</p>
-    <h3>How it plays</h3>
-    <ul class="sheet-list">
-      <li>Pairs must connect in a row, column or diagonal, with only cleared cells between them.</li>
-      <li>The last cell of a row links to the first cell of the next one.</li>
-      <li>Stuck? Ask for a hint, or add the remaining numbers to the end of the board.</li>
-      <li>Move with the D-pad, or go diagonally with 1, 3, 7 and 9.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>JavaScript</li><li>HTML &amp; CSS</li><li>KaiOS 3.x</li></ul>
-  </template>
-
-  <template id="t-petdoku" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Petdoku">
-    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/petdoku.webp" width="480" height="640" alt="Petdoku gameplay."></span></figure>
-    <p class="sheet-lede">Cozy sudoku with pets instead of numbers. Fill every row, column and box with one of each pet.</p>
-    <h3>How it plays</h3>
-    <ul class="sheet-list">
-      <li>Three difficulties: Easy, Medium and Hard.</li>
-      <li>A wrong pet costs a heart. Lose three and the pets get mixed up.</li>
-      <li>Hints help when you’re stuck. Only hint-free solves count toward your best time.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>JavaScript (ES5)</li><li>HTML &amp; CSS</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
-  </template>
-
-  <template id="t-skystack" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Sky Stack">
-    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/sky-stack.webp" width="480" height="640" alt="Sky Stack gameplay."></span></figure>
-    <p class="sheet-lede">A crane swings a new apartment floor back and forth. Press OK to drop it, and stack the tallest tower in town.</p>
-    <h3>How it plays</h3>
-    <ul class="sheet-list">
-      <li>Land a floor dead center for a <strong>Perfect</strong>. Three in a row steady the tower.</li>
-      <li>Floors that hang too far over the edge fall off and cost a heart.</li>
-      <li><strong>Endless:</strong> it speeds up every 10 floors, and the wind picks up from floor 20.</li>
-      <li><strong>Levels:</strong> 10 towers with target heights, each worth up to three stars.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>JavaScript (ES5)</li><li>Canvas</li><li>Web Audio</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
-  </template>
-
-  <template id="t-petpens" data-eyebrow="KaiOS 2.5 &amp; 3.x · Coming soon" data-title="Pet Pens">
-    <figure class="sheet-figure phone-figure"><span class="phone"><img src="assets/pet-pens.webp" width="480" height="640" alt="Pet Pens gameplay."></span></figure>
-    <p class="sheet-lede">A logic puzzle. The board is split into coloured pens, and every row, every column and every pen needs exactly one pet. Pets can’t touch, not even corner to corner.</p>
-    <h3>How it plays</h3>
-    <ul class="sheet-list">
-      <li><strong>300 levels</strong> that grow from 5×5 to 9×9, each with exactly one solution. After that, new puzzles are generated on the phone.</li>
-      <li>Place a pet in the right square and it crosses out every square it rules out.</li>
-      <li>A wrong pet costs a heart. Undo, cross-outs and hints help when you’re stuck.</li>
-      <li>Pick your favourite pet: cat, dog, rabbit, fox, panda and more.</li>
-    </ul>
-    <h3>Built with</h3>
-    <ul class="chips"><li>JavaScript (ES5)</li><li>HTML &amp; CSS</li><li>Puzzle generator</li><li>KaiOS 2.5</li><li>KaiOS 3.x</li></ul>
-  </template>
-
-  <script src="app.js" defer></script>
+  <script src="app.js?v=e107476d" defer></script>
 </body>
 </html>

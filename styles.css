@@ -31,11 +31,18 @@
   --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI Variable Display", "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, Menlo, monospace;
 
+  --feature-bg: #ffffff;
+  --feature-glow: rgba(225, 29, 72, 0.10);
+  --feature-eyebrow: #d70f4b;
+  --feature-shot: 0 0 0 1px var(--hairline), 0 30px 70px rgba(0, 0, 0, 0.18);
+
   color-scheme: light dark;
 }
 
+/* Dark colours: from the system setting, unless the visitor picked a theme
+   with the switch in the nav bar (stored as data-theme on <html>). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #000000;
     --surface: #161617;
     --sheet: #1c1c1e;
@@ -49,8 +56,33 @@
     --nav-bg: rgba(22, 22, 23, 0.72);
     --shadow-shot: 0 2px 6px rgba(0, 0, 0, 0.4), 0 20px 50px rgba(0, 0, 0, 0.55);
     --focus: 0 0 0 3px rgba(41, 151, 255, 0.6);
+    --feature-bg: #0b0b0e;
+    --feature-glow: rgba(225, 29, 72, 0.32);
+    --feature-eyebrow: #ff6b81;
+    --feature-shot: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 30px 80px rgba(0, 0, 0, 0.6);
   }
 }
+:root[data-theme="dark"] {
+    --bg: #000000;
+    --surface: #161617;
+    --sheet: #1c1c1e;
+    --text: #f5f5f7;
+    --text-2: #a1a1a6;
+    --text-3: #86868b;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --chip: rgba(255, 255, 255, 0.09);
+    --accent: #2997ff;
+    --accent-tint: rgba(41, 151, 255, 0.16);
+    --nav-bg: rgba(22, 22, 23, 0.72);
+    --shadow-shot: 0 2px 6px rgba(0, 0, 0, 0.4), 0 20px 50px rgba(0, 0, 0, 0.55);
+    --focus: 0 0 0 3px rgba(41, 151, 255, 0.6);
+    --feature-bg: #0b0b0e;
+    --feature-glow: rgba(225, 29, 72, 0.32);
+    --feature-eyebrow: #ff6b81;
+    --feature-shot: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 30px 80px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
 
 @media (min-width: 640px) {
   :root { --gutter: 24px; }
@@ -456,16 +488,16 @@ button { font: inherit; color: inherit; }
   grid-column: 1 / -1;
   min-height: 0;
   background:
-    radial-gradient(60% 55% at 50% 100%, rgba(225, 29, 72, 0.32), transparent 70%),
-    #0b0b0e;
-  color: #f5f5f7;
+    radial-gradient(60% 55% at 50% 100%, var(--feature-glow), transparent 70%),
+    var(--feature-bg);
+  color: var(--text);
 }
-.tile-feature .tile-eyebrow { color: #ff6b81; }
+.tile-feature .tile-eyebrow { color: var(--feature-eyebrow); }
 .tile-feature .tile-title { font-size: clamp(2.25rem, 1.5rem + 3vw, 3.5rem); }
-.tile-feature .tile-text { color: #a1a1a6; max-width: 30em; }
-.tile-feature .tile-more { color: #2997ff; }
+.tile-feature .tile-text { color: var(--text-2); max-width: 30em; }
+.tile-feature .tile-more { color: var(--accent); }
 .tile-feature .tile-visual { height: clamp(260px, 44vw, 540px); padding-inline: clamp(16px, 6vw, 96px); }
-.tile-feature .shot { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 30px 80px rgba(0, 0, 0, 0.6); }
+.tile-feature .shot { box-shadow: var(--feature-shot); }
 .tile-feature .shot img { object-position: 50% 42%; }
 
 /* Mock: TRLearn dual-subtitle player */
@@ -890,5 +922,136 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
   .nav { background: var(--bg); }
 }
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
-  :root { --hairline: rgba(255, 255, 255, 0.5); --text-2: #d1d1d6; }
+  :root:not([data-theme="light"]) { --hairline: rgba(255, 255, 255, 0.5); --text-2: #d1d1d6; }
 }
+
+/* ==========================================================================
+   CV page (index.html): chemical engineering first, coding on coding.html
+   ========================================================================== */
+
+/* Keep the bar short on phones: Research, Projects and Coding stay. */
+@media (max-width: 600px) { .nav-links .nav-opt { display: none; } }
+
+/* Mock: simplified PTA process flow, read top to bottom */
+.mock-pfd {
+  width: min(100%, 300px);
+  display: flex; flex-direction: column; align-items: center; gap: 0;
+  padding: 22px 18px 30px;
+  border-radius: 16px 16px 0 0;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--hairline), var(--shadow-shot);
+  font-size: 0.9375rem;
+}
+.mock-pfd span {
+  width: 100%; padding: 9px 12px; border-radius: 10px;
+  background: var(--surface); box-shadow: 0 0 0 1px var(--hairline);
+  font-weight: 500;
+}
+.mock-pfd i { width: 2px; height: 16px; background: var(--text-3); position: relative; }
+.mock-pfd i::after {
+  content: ""; position: absolute; left: -4px; bottom: -1px;
+  border: 5px solid transparent; border-top-color: var(--text-3); border-bottom: 0;
+}
+.mock-pfd .pfd-out { background: var(--accent-fill); color: #fff; box-shadow: none; }
+
+/* Mock: water droplet beading on a coated fabric */
+.mock-drop {
+  width: min(100%, 380px);
+  border-radius: 16px 16px 0 0;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--hairline), var(--shadow-shot);
+  display: flex; align-items: center; justify-content: center;
+}
+.mock-drop svg { width: 100%; height: auto; display: block; }
+.mock-drop .drop { fill: rgba(0, 113, 227, 0.22); stroke: var(--accent-fill); stroke-width: 2; }
+.mock-drop .fabric { stroke: var(--text-2); stroke-width: 4; stroke-dasharray: 2 6; stroke-linecap: round; }
+.mock-drop .shine { fill: rgba(255, 255, 255, 0.7); }
+.mock-drop text { fill: var(--text); font: 600 15px var(--font-text); }
+
+/* Skills grid */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+@media (max-width: 800px) { .cv-grid { grid-template-columns: minmax(0, 1fr); } }
+.cv-block {
+  padding: clamp(22px, 3vw, 32px);
+  border-radius: var(--radius-tile);
+  background: var(--surface);
+}
+
+.lang-list li { padding: 12px 0; border-top: 1px solid var(--hairline); }
+.lang-list li:first-child { border-top: 0; padding-top: 0; }
+.lang-name { font-weight: 600; margin-right: 10px; }
+.lang-level { color: var(--text-2); }
+.lang-detail { display: block; margin-top: 4px; font-size: 0.875rem; color: var(--text-3); }
+
+/* Education honors list: the shared timeline, without the big top margin */
+.cv-list { margin-top: 0; }
+
+/* Contact: one main button, then quiet links */
+.contact-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px;
+  margin-top: 24px; font-size: 1.0625rem;
+}
+
+/* ---------- Light / dark switch ---------- */
+.theme-toggle {
+  display: inline-grid; place-items: center;
+  width: 32px; height: 32px; padding: 0; border: 0; border-radius: 999px;
+  background: var(--chip); color: var(--text); cursor: pointer;
+  transition: background-color 0.2s, scale 0.25s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle:hover { background: var(--hairline); }
+.theme-toggle:active { scale: 0.92; }
+.theme-toggle svg { width: 17px; height: 17px; fill: currentColor; }
+.theme-toggle[data-mode="dark"] .i-sun,
+.theme-toggle:not([data-mode="dark"]) .i-moon { display: none; }
+
+/* Phone, city and birth year under the email button */
+.contact-facts {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px;
+  margin-top: 18px; font-size: 1.0625rem; color: var(--text-2);
+}
+.contact-facts li + li::before { content: "·"; margin-right: 10px; color: var(--text-3); }
+
+/* Instagram reels */
+.reels {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 260px));
+}
+@media (max-width: 560px) { .reels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+.reel { display: flex; flex-direction: column; gap: 6px; color: var(--text); }
+.reel:hover { text-decoration: none; }
+.reel img {
+  width: 100%; aspect-ratio: 9 / 14; object-fit: cover;
+  border-radius: 18px; box-shadow: 0 0 0 1px var(--hairline), var(--shadow-shot);
+  margin-bottom: 8px; transition: translate 0.4s var(--ease-out);
+}
+@media (hover: hover) { .reel:hover img { translate: 0 -4px; } }
+.reel-title { font-weight: 600; font-size: 1.0625rem; line-height: 1.35; }
+.reel-sub { font-size: 0.9375rem; color: var(--text-2); }
+.reels-cta { margin-top: 32px; }
+
+/* Wide (full-row) light tile, e.g. the water-potability project */
+.tile-wide { grid-column: 1 / -1; }
+
+/* Mock: stylised ROC curve for the water-potability tile */
+.mock-roc {
+  width: min(100%, 440px);
+  border-radius: 16px 16px 0 0;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--hairline), var(--shadow-shot);
+  padding: 8px 12px 0;
+}
+.mock-roc svg { width: 100%; height: auto; display: block; }
+.mock-roc .axis { stroke: var(--text-3); stroke-width: 1.5; }
+.mock-roc .chance { stroke: var(--text-3); stroke-width: 1.5; stroke-dasharray: 5 5; }
+.mock-roc .curve { fill: none; stroke: var(--accent-fill); stroke-width: 3; stroke-linecap: round; }
+.mock-roc .lbl { fill: var(--text-2); font: 12px var(--font-text); }
+.mock-roc .lbl-strong { fill: var(--text); font: 600 14px var(--font-text); }
+
+.cv-span { grid-column: 1 / -1; }
+.cv-note { margin-top: 14px; font-size: 0.9375rem; color: var(--text-2); }

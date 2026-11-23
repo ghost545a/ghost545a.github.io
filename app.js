@@ -378,3 +378,41 @@
   handle.addEventListener('pointerup', endDrag);
   handle.addEventListener('pointercancel', endDrag);
 })();
+
+
+/* ---------- Light / dark switch ----------
+   Follows the system until the visitor picks a theme; the choice is kept in
+   localStorage and applied before first paint by the inline script in <head>. */
+(function () {
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  var root = document.documentElement;
+  var mq = window.matchMedia('(prefers-color-scheme: dark)');
+  var metas = document.querySelectorAll('meta[name="theme-color"]');
+  var sources = document.querySelectorAll('source[data-scheme]');
+
+  function chosen() { return root.getAttribute('data-theme'); }
+  function current() { return chosen() || (mq.matches ? 'dark' : 'light'); }
+
+  function apply() {
+    var t = current();
+    btn.setAttribute('data-mode', t);
+    btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    for (var i = 0; i < metas.length; i++) metas[i].setAttribute('content', t === 'dark' ? '#000000' : '#f5f5f7');
+    // <picture> sources pick their image with a media query, so steer them too.
+    for (var j = 0; j < sources.length; j++) {
+      var s = sources[j];
+      if (!s.hasAttribute('data-media')) s.setAttribute('data-media', s.getAttribute('media'));
+      s.setAttribute('media', chosen() ? (s.getAttribute('data-scheme') === t ? 'all' : 'not all') : s.getAttribute('data-media'));
+    }
+  }
+
+  btn.addEventListener('click', function () {
+    var t = current() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', t);
+    try { localStorage.setItem('theme', t); } catch (e) {}
+    apply();
+  });
+  if (mq.addEventListener) mq.addEventListener('change', apply);
+  apply();
+})();
