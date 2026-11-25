@@ -1055,3 +1055,17 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
 
 .cv-span { grid-column: 1 / -1; }
 .cv-note { margin-top: 14px; font-size: 0.9375rem; color: var(--text-2); }
+
+/* ==========================================================================
+   Phone-only fixes (nothing here applies on a PC-width screen)
+   ========================================================================== */
+@media (max-width: 600px) {
+  /* The bar must fit one line at 360px, or phones zoom the whole page out. */
+  .nav-inner { gap: 6px; }
+  .nav-name { font-size: 0; flex: none; }
+  .nav-name::after { content: "Mohammed"; font-size: 1rem; letter-spacing: -0.01em; }
+  .nav-links { gap: 0; min-width: 0; }
+  .nav-links a { padding: 9px 7px; }
+  .nav-name { padding-block: 8px; }
+  .theme-toggle { flex: none; width: 36px; height: 36px; }
+}
