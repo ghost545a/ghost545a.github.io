@@ -1079,3 +1079,7 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
 @media (max-width: 359px) { .nav-links a { padding-inline: 4px; } .nav-inner { gap: 4px; } }
 /* Phones: year above each entry, so the text gets the full width */
 @media (max-width: 600px) { .cv-list li { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+/* Convert to QR tile: a phone-width window aimed at the QR code */
+[data-sheet="convertqr"] .shot { width: min(100%, 440px); }
+[data-sheet="convertqr"] .shot img { object-position: 50% 66%; }

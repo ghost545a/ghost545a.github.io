@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://ghost545a.github.io/assets/turkce-map.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=c695ddd1">
+  <link rel="stylesheet" href="styles.css?v=69ca469f">
   <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -167,6 +167,24 @@
                     <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.6 4.7l1.9.6A5 5 0 1 0 12 7v2.5L8 6l4-3.5z"/></svg></span>
                     <span class="mt-btn"><svg viewBox="0 0 24 24"><path d="M6 5.5v13l9-6.5zM16 5.5h2.2v13H16z"/></svg></span>
                   </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Convert to QR -->
+            <a class="tile tile-wide reveal" href="https://ghost545a.github.io/convert-to-qr/" data-sheet="convertqr">
+              <div class="tile-copy">
+                <p class="tile-eyebrow">HTML · CSS · JavaScript</p>
+                <h3 class="tile-title">Convert to QR</h3>
+                <p class="tile-text">Paste any website link and download a print-ready QR code PNG. Runs entirely in the browser.</p>
+                <span class="tile-more">Learn more <span aria-hidden="true">›</span></span>
+              </div>
+              <div class="tile-visual">
+                <div class="shot shot-window">
+                  <picture>
+                    <source srcset="assets/convert-to-qr-light.webp" media="(prefers-color-scheme: light)" data-scheme="light">
+                    <img src="assets/convert-to-qr-dark.webp" width="800" height="980" loading="lazy" alt="Convert to QR: a link field, an optional caption field and a QR code for ghost545a.github.io with a Download PNG button.">
+                  </picture>
                 </div>
               </div>
             </a>
@@ -384,6 +402,24 @@
     <div class="sheet-actions">
       <a class="btn btn-fill" href="https://subtitle-arabic-maker.onrender.com/">Open the app</a>
       <a class="btn btn-tinted" href="https://github.com/ghost545a/Subtitle_Arabic_maker">View source</a>
+    </div>
+  </template>
+
+  <template id="t-convertqr" data-eyebrow="HTML · CSS · JavaScript" data-title="Convert to QR">
+    <figure class="sheet-figure"><picture><source srcset="assets/convert-to-qr-light.webp" media="(prefers-color-scheme: light)" data-scheme="light"><img src="assets/convert-to-qr-dark.webp" width="800" height="980" alt="Convert to QR with a QR code for ghost545a.github.io."></picture></figure>
+    <p class="sheet-lede">A small web tool that turns any website link into a QR code you can download as a PNG. Nothing is sent to a server.</p>
+    <h3>Highlights</h3>
+    <ul class="sheet-list">
+      <li>Type <code>example.com</code> and it adds <code>https://</code> for you; links with Arabic or Turkish letters are encoded so every scanner opens them.</li>
+      <li>Optional caption under the code: the link itself and a line of your own, such as your name.</li>
+      <li>Downloads a 1200px-wide PNG that prints sharply, named after the site.</li>
+      <li>Shareable: <code>?url=…&amp;note=…</code> opens the tool with a code ready to download.</li>
+    </ul>
+    <h3>Built with</h3>
+    <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li><li>qrcode-generator</li></ul>
+    <div class="sheet-actions">
+      <a class="btn btn-fill" href="https://ghost545a.github.io/convert-to-qr/">Open the tool</a>
+      <a class="btn btn-tinted" href="https://github.com/ghost545a/convert-to-qr">View source</a>
     </div>
   </template>
 
