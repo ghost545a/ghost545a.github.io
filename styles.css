@@ -930,7 +930,7 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
    ========================================================================== */
 
 /* Keep the bar short on phones: Research, Projects and Coding stay. */
-@media (max-width: 600px) { .nav-links .nav-opt { display: none; } }
+@media (max-width: 780px) { .nav-links .nav-opt { display: none; } }
 
 /* Mock: simplified PTA process flow, read top to bottom */
 .mock-pfd {
@@ -1059,8 +1059,8 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
 /* ==========================================================================
    Phone-only fixes (nothing here applies on a PC-width screen)
    ========================================================================== */
-@media (max-width: 600px) {
-  /* The bar must fit one line at 360px, or phones zoom the whole page out. */
+@media (max-width: 780px) {
+  /* The bar must fit one line from 360px to 780px, or the page scrolls sideways. */
   .nav-inner { gap: 6px; }
   .nav-name { font-size: 0; flex: none; }
   .nav-name::after { content: "Mohammed"; font-size: 1rem; letter-spacing: -0.01em; }
@@ -1069,3 +1069,13 @@ html.sheet-open .page { border-radius: 14px; overflow: clip; will-change: transf
   .nav-name { padding-block: 8px; }
   .theme-toggle { flex: none; width: 36px; height: 36px; }
 }
+
+/* Internship entries: title line, then date and a short description */
+.tl-when { display: block; margin-top: 4px; font-size: 0.9375rem; color: var(--text-3); }
+.tl-detail { display: block; margin-top: 8px; color: var(--text-2); max-width: 44rem; }
+
+/* "Experience" joins the bar only where there is room for it */
+@media (max-width: 900px) { .nav-links .nav-wide { display: none; } }
+@media (max-width: 359px) { .nav-links a { padding-inline: 4px; } .nav-inner { gap: 4px; } }
+/* Phones: year above each entry, so the text gets the full width */
+@media (max-width: 600px) { .cv-list li { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
