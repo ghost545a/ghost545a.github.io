@@ -1,6 +1,6 @@
-# ghost545a.github.io
+# mohammedmahram.blog
 
-My personal site: who I am and what I've built. Live at **https://ghost545a.github.io/**.
+My personal site: who I am and what I've built. Live at **https://mohammedmahram.blog/**.
 
 Plain HTML, CSS and JavaScript. No framework, no build step, no dependencies.
 
